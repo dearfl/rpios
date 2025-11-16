@@ -1,0 +1,23 @@
+[package]
+name = "rpios"
+version = "0.0.0"
+authors = ["dearfl <i@flr.me>"]
+edition = "2024"
+
+[profile.release]
+lto = true
+
+[features]
+default = [ "bsp_rpi4" ]
+bsp_rpi3 = []
+bsp_rpi4 = []
+
+[[bin]]
+name = "kernel"
+path = "src/main.rs"
+
+[dependencies]
+
+# [target.aarch64-unknown-none-softfloat.dependencies]
+[target.'cfg(target_arch = "aarch64")'.dependencies]
+aarch64-cpu = "11.2.0"
