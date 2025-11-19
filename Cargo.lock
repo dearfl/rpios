@@ -3,8 +3,6 @@
 version = 4
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "aarch64-cpu"
 version = "11.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -14,6 +12,14 @@ dependencies = [
 ]
 
 [[package]]
->>>>>>> c440c56 (tmp)
 name = "rpios"
 version = "0.0.0"
+dependencies = [
+ "aarch64-cpu",
+]
+
+[[package]]
+name = "tock-registers"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8d2d250f87fb3fb6f225c907cf54381509f47b40b74b1d1f12d2dccbc915bdfe"
