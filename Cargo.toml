@@ -20,4 +20,4 @@ path = "src/main.rs"
 
 # [target.aarch64-unknown-none-softfloat.dependencies]
 [target.'cfg(target_arch = "aarch64")'.dependencies]
-aarch64-cpu = "11.1.0"
+aarch64-cpu = "11.2.0"
