@@ -1,4 +1,4 @@
-// #[cfg(any(feature = "bsp_rpi3", feature = "bsp_rpi4"))]
+#[cfg(any(feature = "bsp_rpi3", feature = "bsp_rpi4"))]
 mod raspberrypi;
 
 #[cfg(any(feature = "bsp_rpi3", feature = "bsp_rpi4"))]
